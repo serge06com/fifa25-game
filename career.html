@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Career Mode - Build Your Football Career</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #101a2a;
+    color: #eee;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  h1, h2 {
+    color: #1ed760;
+    text-align: center;
+  }
+  label, select, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+  }
+  button {
+    background: #1ed760;
+    color: #0b1624;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #17b24a;
+  }
+  .hidden {
+    display: none;
+  }
+  ul.club-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul.club-list li {
+    background: #192a4a;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  ul.club-list li:hover {
+    background: #1ed760;
+    color: #0b1624;
+  }
+</style>
+</head>
+<body>
+
+<h1>Start Your Football Career</h1>
+
+<!-- Step 1: Player Info -->
+<section id="step1">
+  <h2>Enter Player Details</h2>
+  <form id="playerInfoForm">
+    <label for="playerName">Name:</label>
+    <input type="text" id="playerName" placeholder="Your name" required />
+
+    <label for="birthCountry">Birth Country:</label>
+    <select id="birthCountry" required>
+      <option value="">-- Select Country --</option>
+      <option value="South Africa">South Africa</option>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Egypt">Egypt</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Morocco">Morocco</option>
+      <option value="England">England</option>
+      <option value="Spain">Spain</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Argentina">Argentina</option>
+      <!-- Add more countries as needed -->
+    </select>
+
+    <label for="playerPosition">Position:</label>
+    <select id="playerPosition" required>
+      <option value="">-- Select Position --</option>
+      <option value="Striker">Striker</option>
+      <option value="Midfielder">Midfielder</option>
+      <option value="Defender">Defender</option>
+      <option value="Goalkeeper">Goalkeeper</option>
+    </select>
+
+    <button type="submit">Next</button>
+  </form>
+</section>
+
+<!-- Step 2: Choose Club Tier -->
+<section id="step2" class="hidden">
+  <h2>Choose Club Tier</h2>
+  <p>Select the type of club you want to start your career with. Harder tiers have better rewards but tougher competition.</p>
+  <ul class="club-list" id="clubTierList">
+    <li data-tier="top">Top-tier Clubs</li>
+    <li data-tier="mid">Mid-tier Clubs</li>
+    <li data-tier="lower">Lower-tier Clubs</li>
+  </ul>
+</section>
+
+<!-- Step 3: Choose Club -->
+<section id="step3" class="hidden">
+  <h2>Choose Your Club</h2>
+  <p>These clubs need players in your position.</p>
+  <ul class="club-list" id="clubOptionsList">
+    <!-- Populated dynamically -->
+  </ul>
+</section>
+
+<!-- Career Dashboard -->
+<section id="careerDashboard" class="hidden">
+  <h2>Your Career Dashboard</h2>
+  <p id="careerInfo"></p>
+  <button id="playMatchBtn">Play Next Match</button>
+  <p id="matchResult"></p>
+</section>
+
+<script src="scripts/career.js"></script>
+</body>
+</html>
+
+

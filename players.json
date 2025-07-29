@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Lionel Messi",
+    "rating": 93,
+    "price": 120,
+    "club": "Paris Saint-Germain",
+    "country": "Argentina"
+  },
+  {
+    "name": "Cristiano Ronaldo",
+    "rating": 92,
+    "price": 115,
+    "club": "Al Nassr",
+    "country": "Portugal"
+  },
+  {
+    "name": "Mohamed Salah",
+    "rating": 89,
+    "price": 100,
+    "club": "Liverpool",
+    "country": "Egypt"
+  },
+  {
+    "name": "Sadio Man\u00e9",
+    "rating": 88,
+    "price": 90,
+    "club": "Al Nassr",
+    "country": "Senegal"
+  },
+  {
+    "name": "Kylian Mbapp\u00e9",
+    "rating": 91,
+    "price": 130,
+    "club": "Paris Saint-Germain",
+    "country": "France"
+  },
+  {
+    "name": "John Mbatha",
+    "rating": 65,
+    "price": 40,
+    "club": "Orlando Pirates",
+    "country": "South Africa"
+  },
+  {
+    "name": "Sipho Ndlovu",
+    "rating": 70,
+    "price": 50,
+    "club": "Kaizer Chiefs",
+    "country": "South Africa"
+  },
+  {
+    "name": "Achraf Hakimi",
+    "rating": 87,
+    "price": 95,
+    "club": "Paris Saint-Germain",
+    "country": "Morocco"
+  },
+  {
+    "name": "Riyad Mahrez",
+    "rating": 86,
+    "price": 85,
+    "club": "Al-Ahli",
+    "country": "Algeria"
+  },
+  {
+    "name": "Victor Osimhen",
+    "rating": 84,
+    "price": 75,
+    "club": "Napoli",
+    "country": "Nigeria"
+  },
+  {
+    "name": "Andre Onana",
+    "rating": 83,
+    "price": 70,
+    "club": "Manchester United",
+    "country": "Cameroon"
+  },
+  {
+    "name": "Percy Tau",
+    "rating": 76,
+    "price": 55,
+    "club": "Al Ahly",
+    "country": "South Africa"
+  },
+  {
+    "name": "Wilfried Zaha",
+    "rating": 82,
+    "price": 68,
+    "club": "Galatasaray",
+    "country": "Ivory Coast"
+  },
+  {
+    "name": "Kalidou Koulibaly",
+    "rating": 85,
+    "price": 78,
+    "club": "Al Hilal",
+    "country": "Senegal"
+  },
+  {
+    "name": "Thomas Partey",
+    "rating": 84,
+    "price": 73,
+    "club": "Arsenal",
+    "country": "Ghana"
+  }
+]
