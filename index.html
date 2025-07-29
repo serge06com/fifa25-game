@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIFA25 Ultimate Football Game</title>
+  <style>
+    /* Reset some default browser styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b2545;
+      color: #ffffff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #0d3b66;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    nav {
+      background-color: #144d89;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      gap: 25px;
+    }
+    nav a {
+      color: #f4d35e;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e6c846;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-bottom: 3px solid #f4d35e;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    ul {
+      list-style: disc inside;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .button {
+      background-color: #f4d35e;
+      color: #0b2545;
+      border: none;
+      padding: 15px 35px;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: background-color 0.3s ease;
+      margin-top: 15px;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #e6c846;
+    }
+    footer {
+      background-color: #0d3b66;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+    a.email-link {
+      color: #f4d35e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+    /* Responsive for small devices */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.8rem;
+        padding: 15px;
+      }
+      nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+      }
+      main {
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>FIFA25 Ultimate Football</header>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#howto">How to Play</a>
+    <a href="shop.html">Shop</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="features">
+      <h2>Game Features</h2>
+      <ul>
+        <li>Men’s and Women’s Leagues including Legends</li>
+        <li>Start your career from the academy and build your dream team</li>
+        <li>Online multiplayer matches with friends and global players</li>
+        <li>Realistic VAR system and referee commentary</li>
+        <li>Buy stadiums, players, and upgrades using in-game or real money</li>
+      </ul>
+    </section>
+    <section id="howto">
+      <h2>How to Play</h2>
+      <p>
+        Manage your football career by competing in leagues, upgrading your team, and playing thrilling online matches.
+      </p>
+      <button class="button" onclick="alert('Game coming soon! Stay tuned.')">Play Now</button>
+    </section>
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>The full game will be available for <strong>R250</strong>.</p>
+      <p>Players can purchase additional stadiums, players, and upgrades with in-game currency or real money.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have questions or want to collaborate? Email us at <a href="mailto:lesegosekhu20@gmail.com" class="email-link">lesegosekhu20@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 FIFA25 Ultimate Football. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIFA25 Shop - Buy Players & Stadiums</title>
+  <style>
+    /* Same styles as index.html for consistency */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b2545;
+      color: #ffffff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #0d3b66;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    nav {
+      background-color: #144d89;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      gap: 25px;
+    }
+    nav a {
+      color: #f4d35e;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e6c846;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-bottom: 3px solid #f4d35e;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .shop-item {
+      background-color: #144d89;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .shop-item h3 {
+      margin-bottom: 10px;
+      color: #f4d35e;
+    }
+    .shop-item p {
+      margin-bottom: 10px;
+    }
+    .buy-button {
+      background-color: #f4d35e;
+      color: #0b2545;
+      border: none;
+      padding: 12px 30px;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .buy-button:hover {
+      background-color: #e6c846;
+    }
+    footer {
+      background-color: #0d3b66;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+    a.email-link {
+      color: #f4d35e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+    /* Responsive for small devices */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.8rem;
+        padding: 15px;
+      }
+      nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+      }
+      main {
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>FIFA25 Ultimate Football</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html" style="color:#e6c846;">Shop</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Shop</h2>
+
+      <div class="shop-item">
+        <h3>Legend Player: John Legend</h3>
+        <p>Position: Forward | Rating: 88 | Legendary striker with great skills.</p>
+        <button class="buy-button" onclick="alert('You bought the Legend Player! You also get a free player rated 70 or above!')">Buy for R150</button>
+      </div>
+
+      <div class="shop-item">
+        <h3>Player: Regular Player</h3>
+        <p>Position: Midfielder | Rating: 70 | Solid and reliable player.</p>
+        <button class="buy-button" onclick="alert('You bought this player!')">Buy for R50</button>
+      </div>
+
+      <div class="shop-item">
+        <h3>Stadium: National Arena</h3>
+        <p>Capacity: 50,000 | Modern facilities | Perfect for big matches.</p>
+        <button class="buy-button" onclick="alert('Buy Stadium for R100 - Coming Soon!')">Buy for R100</button>
+      </div>
+
+      <div class="shop-item">
+        <h3>Upgrade: Advanced Training</h3>
+        <p>Boost player stats by 10% with this training package.</p>
+        <button class="buy-button" onclick="alert('Buy Upgrade for R50 - Coming Soon!')">Buy for R50</button>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 FIFA25 Ultimate Football. All rights reserved.
+  </footer>
+</body>
+</html>
+
