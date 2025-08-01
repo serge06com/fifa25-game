@@ -1,74 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Serge Football Career - Main Menu</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <title>MLS 2025 Team Rosters</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0b1624;
-      color: #f0f0f0;
-      margin: 0; padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
     }
     h1 {
-      margin-bottom: 40px;
-      font-weight: 700;
-      font-size: 2.8rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #1ed760;
-      text-shadow: 0 0 8px #1ed760;
+      text-align: center;
     }
-    nav {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 280px;
-    }
-    button {
-      background: #1ed760;
-      border: none;
+    .team {
+      background: #fff;
       padding: 15px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      border-radius: 8px;
-      cursor: pointer;
-      color: #0b1624;
-      box-shadow: 0 4px 10px rgb(30 215 96 / 0.6);
-      transition: background 0.3s ease;
+      margin: 15px 0;
+      border-left: 5px solid #0077cc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    button:hover {
-      background: #17b24a;
-      box-shadow: 0 6px 15px rgb(23 178 74 / 0.8);
+    .team-name {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .players {
+      list-style: none;
+      padding-left: 15px;
+    }
+    .player {
+      margin: 4px 0;
     }
   </style>
 </head>
-<body>
-  <h1>Serge Football Career</h1>
-  <nav>
-    <button onclick="location.href='career.html'">Career Mode</button>
-    <button onclick="location.href='online.html'">Online Leagues</button>
-    <button onclick="location.href='tactics.html'">Tactical Setup</button>
-    <button onclick="location.href='shop.html'">Store / Unlocks</button>
-    <button onclick="location.href='about.html'">About</button>
-    <button onclick="exitGame()">Exit Game</button>
-  </nav>
+<div id="teams-container"></div>
 
-  <script>
-    function exitGame() {
-      if (confirm('Are you sure you want to exit?')) {
-        window.close(); // May not work in some browsers
-      }
-    }
-  </script>
+
+  <h1>MLS 2025 Team Rosters</h1>
+  <div id="teams-container">Loading...</div>
+
+  <!-- Order matters: load player data first -->
+  <script src="players.js"></script>
+  <script src="league.js"></script>
+
 </body>
 </html>
+>
+
 
 

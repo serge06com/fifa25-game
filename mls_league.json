@@ -1,0 +1,25 @@
+{
+  "league": "Major League Soccer",
+  "country": "USA & Canada",
+  "founded": 1993,
+  "number_of_teams": 16,
+  "teams": [
+    "Atlanta United FC",
+    "Austin FC",
+    "CF Montréal",
+    "Charlotte FC",
+    "Chicago Fire FC",
+    "Columbus Crew",
+    "D.C. United",
+    "FC Cincinnati",
+    "Inter Miami CF",
+    "Nashville SC",
+    "New York City FC",
+    "New York Red Bulls",
+    "Orlando City SC",
+    "Philadelphia Union",
+    "Toronto FC",
+    "New England Revolution"
+  ],
+  "logo": "assets/logos/mls.png"
+}

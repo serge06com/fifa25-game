@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CAF Competitions - Africa Football</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    /* your headings stay exactly as they are */
+    h1, h2 {
+      text-align: center;
+      background: #1e3c72;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+      border-radius: 8px;
+      text-transform: uppercase;
+    }
+
+    /* back button */
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* reset list bullets + make each <li> a full-width clickable block */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin: 8px 0;
+    }
+    ul li a {
+      display: block;
+      padding: 12px 15px;
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      color: #007b5e;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    ul li a:hover {
+      background: #e6f9f1;
+      text-decoration: none;
+    }
+
+    /* table setup + clickable rows */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #007b5e;
+      color: white;
+    }
+    tr.clickable-row {
+      cursor: pointer;
+    }
+    tr.clickable-row:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* country-cup links */
+    .cup-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .cup-list li {
+      margin: 8px 0;
+    }
+    .cup-list a {
+      display: block;
+      text-align: center;
+      padding: 12px 15px;
+      background: #007b5e;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .cup-list a:hover {
+      background: #005f4d;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="continents.html" class="back-button">⬅ Back to Continent Menu</a>
+
+  <h1>CAF COMPETITIONS</h1>
+  <ul>
+    <li><a href="caf-champions-league.html">CAF Champions League</a></li>
+    <li><a href="caf-confederation-cup.html">CAF Confederation Cup</a></li>
+    <li><a href="caf-super-cup.html">CAF Super Cup</a></li>
+    <li><a href="african-football-league.html">African Football League (AFL)</a></li>
+    <li><a href="caf-womens-champions-league.html">CAF Women’s Champions League</a></li>
+    <li><a href="africa-futsal-cup-of-nations.html">Africa Futsal Cup of Nations</a></li>
+  </ul>
+
+
+  <h1>AFRICAN LEAGUES</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Country 🇿🇦</th>
+        <th>Top League</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="clickable-row" data-href="egyptian-premier-league.html">
+        <td>Egypt</td>
+        <td>Egyptian Premier League</td>
+      </tr>
+      <tr class="clickable-row" data-href="botola-pro.html">
+        <td>Morocco</td>
+        <td>Botola Pro</td>
+      </tr>
+      <tr class="clickable-row" data-href="ligue-professionnelle-1.html">
+        <td>Algeria</td>
+        <td>Ligue Professionnelle 1</td>
+      </tr>
+      <tr class="clickable-row" data-href="premier-soccer-league.html">
+        <td>South Africa</td>
+        <td>Premier Soccer League (PSL)</td>
+      </tr>
+      <tr class="clickable-row" data-href="ligue-1-professionnelle.html">
+        <td>Tunisia</td>
+        <td>Ligue 1 Professionnelle</td>
+      </tr>
+      <tr class="clickable-row" data-href="ligi-kuu-bara.html">
+        <td>Tanzania</td>
+        <td>Ligi Kuu Bara</td>
+      </tr>
+      <tr class="clickable-row" data-href="girabola.html">
+        <td>Angola</td>
+        <td>Girabola</td>
+      </tr>
+      <tr class="clickable-row" data-href="linafoot.html">
+        <td>DR Congo</td>
+        <td>Linafoot</td>
+      </tr>
+      <tr class="clickable-row" data-href="sudan-premier-league.html">
+        <td>Sudan</td>
+        <td>Sudan Premier League</td>
+      </tr>
+      <tr class="clickable-row" data-href="libyan-premier-league.html">
+        <td>Libya</td>
+        <td>Libyan Premier League</td>
+      </tr>
+      <tr class="clickable-row" data-href="ligue-1-ivory-coast.html">
+        <td>Ivory Coast</td>
+        <td>Ligue 1</td>
+      </tr>
+      <tr class="clickable-row" data-href="nigeria-professional-football-league.html">
+        <td>Nigeria</td>
+        <td>Nigeria Professional Football League</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h1>COUNTRIES CUPS</h1>
+  <ul class="cup-list">
+    <li><a href="wafcon-all-age.html">WAFCON (ALL AGE)</a></li>
+    <li><a href="cosafa.html">COSAFA</a></li>
+    <li><a href="afcon-all-age.html">AFCON (ALL AGE)</a></li>
+  </ul>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="continents.html" class="back-button">⬅ Back to Continent Menu</a>
+  </div>
+
+  <script>
+    // make each table row clickable
+    document.querySelectorAll('.clickable-row').forEach(row =>
+      row.addEventListener('click', () =>
+        window.location.href = row.dataset.href
+      )
+    );
+  </script>
+</body>
+</html>
+<!-- This HTML file provides an overview of African football competitions and leagues. -->
+<!-- It includes a stylish header for CAF competitions, a table listing the main competitions, -->
+<!-- and sections for various African leagues and country-specific cups. -->

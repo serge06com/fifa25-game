@@ -1,0 +1,45 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eaf3ff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0b3d91;
+  margin-bottom: 30px;
+}
+
+.team {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 500px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0b3d91;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #08306b;
+  text-decoration: underline;
+}

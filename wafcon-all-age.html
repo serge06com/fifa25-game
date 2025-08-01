@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WAFCON Competitions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fafafa;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      background: linear-gradient(90deg, #e67e22, #d35400);
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+    .selector {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .selector button {
+      background: #fff;
+      border: 2px solid #d35400;
+      color: #d35400;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .selector button.active,
+    .selector button:hover {
+      background: #d35400;
+      color: #fff;
+    }
+    .countries {
+      display: none;
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .countries h2 {
+      margin-top: 0;
+      color: #d35400;
+    }
+    .countries ul {
+      list-style: none;
+      padding: 0;
+    }
+    .countries li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .countries li:last-child {
+      border-bottom: none;
+    }
+    .countries li a {
+      color: #d35400;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      padding: 4px 0;
+    }
+    .countries li a:hover {
+      text-decoration: underline;
+    }
+    .back-button {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .back-button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>WAFCON Competitions</h1>
+
+  <div class="selector">
+    <button id="btn-u17" class="active">U17</button>
+    <button id="btn-u21">U21</button>
+    <button id="btn-senior">Senior</button>
+  </div>
+
+  <div class="countries" id="country-container">
+    <h2 id="comp-title">U17 WAFCON</h2>
+    <ul id="country-list">
+      <!-- Country links go here -->
+    </ul>
+  </div>
+
+  <!-- Back to Africa Leagues -->
+  <a href="africa.html" class="back-button">← Back to Africa Leagues</a>
+
+  <script>
+    const data = {
+      'U17': [
+        'Nigeria', 'Ghana', 'Cameroon', "Côte d'Ivoire",
+        'South Africa', 'Egypt', 'Morocco', 'Senegal'
+      ],
+      'U21': [
+        'Algeria', 'Tunisia', 'Burkina Faso', 'Mali',
+        'Uganda', 'Zambia', 'Egypt', 'Nigeria'
+      ],
+      'Senior': [
+        'Nigeria', 'South Africa', 'Cameroon', 'Morocco',
+        'Egypt', 'Ghana', "Côte d'Ivoire", 'Senegal'
+      ]
+    };
+
+    const buttons = {
+      'U17': document.getElementById('btn-u17'),
+      'U21': document.getElementById('btn-u21'),
+      'Senior': document.getElementById('btn-senior')
+    };
+    const container = document.getElementById('country-container');
+    const titleEl   = document.getElementById('comp-title');
+    const listEl    = document.getElementById('country-list');
+
+    function setActive(selected) {
+      Object.values(buttons).forEach(btn => btn.classList.remove('active'));
+      buttons[selected].classList.add('active');
+    }
+
+    function renderList(category) {
+      titleEl.textContent = `${category} WAFCON`;
+      listEl.innerHTML = '';
+      data[category].forEach(country => {
+        const li = document.createElement('li');
+        const a  = document.createElement('a');
+        a.href = `#${category.toLowerCase()}-${country.toLowerCase().replace(/[^a-z0-9]+/g,'-')}`;
+        a.textContent = country;
+        li.appendChild(a);
+        listEl.appendChild(li);
+      });
+      container.style.display = 'block';
+    }
+
+    // Initial render
+    renderList('U17');
+
+    // Attach events
+    buttons['U17'].addEventListener('click', () => { setActive('U17'); renderList('U17'); });
+    buttons['U21'].addEventListener('click', () => { setActive('U21'); renderList('U21'); });
+    buttons['Senior'].addEventListener('click', () => { setActive('Senior'); renderList('Senior'); });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>English Premier League – 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+    }
+    .team {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .team h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .player-list {
+      padding-left: 20px;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #004080;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>English Premier League – 2025</h1>
+
+  <div id="teams-container">Loading teams...</div>
+
+  <a href="index.html">⬅️ Back to Main Menu</a>
+
+  <script src="players.js"></script>
+  <script src="league.js"></script>
+  <script>
+    const leagueTeams = [
+      "Arsenal", "Manchester City", "Manchester United", "Chelsea", "Liverpool",
+      "Tottenham Hotspur", "Newcastle United", "Brighton & Hove Albion", "Aston Villa", "West Ham United",
+      "Wolverhampton Wanderers", "Brentford", "Fulham", "Crystal Palace", "Everton",
+      "Nottingham Forest", "Burnley", "Sheffield United", "Luton Town", "Bournemouth"
+    ];
+
+    const container = document.getElementById('teams-container');
+    container.innerHTML = "";
+
+    leagueTeams.forEach(team => {
+      const players = teamRosters[team] || [];
+      const teamDiv = document.createElement("div");
+      teamDiv.className = "team";
+      teamDiv.innerHTML = `
+        <h2>${team}</h2>
+        <ul class="player-list">
+          ${players.map(player => `<li>${player}</li>`).join("")}
+        </ul>
+      `;
+      container.appendChild(teamDiv);
+    });
+  </script>
+</body>
+</html>
